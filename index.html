@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aguarde...</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2074068463378069');
+    fbq('track', 'PageView');
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      font-family: Arial, sans-serif;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div>Carregando…</div>
+
+<script>
+  const telegramUrl = "https://t.me/+i9wBznEPyrdjOTgx";
+
+  const bots = [
+    "facebook",
+    "meta",
+    "bot",
+    "crawler",
+    "spider",
+    "preview",
+    "whatsapp",
+    "telegrambot",
+    "google",
+    "bing"
+  ];
+
+  const ua = navigator.userAgent.toLowerCase();
+
+  const isBot = bots.some(bot => ua.includes(bot));
+
+  if (!isBot) {
+    setTimeout(() => {
+      window.location.href = telegramUrl;
+    }, 1500);
+  }
+</script>
+
+</body>
+</html>
